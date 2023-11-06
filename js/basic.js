@@ -11,6 +11,8 @@ if(document.readyState !== "loading"){
 async function initializeCode(){
 const response1 = await fetch('https://dog.ceo/api/breed/akita/images/random');
 const data1 = await response1.json();
+const wikiResponse1 = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/Akita?redirect=false');
+const wikiData1 = await wikiResponse1.json();
 const wikiContainer1 = document.getElementById("item1");
 const wikiContainer2 = document.getElementById("item2");
 const wikiContainer3 = document.getElementById("item3");
@@ -29,7 +31,7 @@ h.className = "wiki-header";
 h.textContent = "Akita";
 divContent.className = "wiki-content";
 paragraph.className = "wiki-text";
-paragraph.textContent = "Some text about this breed.";
+paragraph.textContent = wikiData1.message;
 divImage.className = "img-container";
 image.className = "wiki-img";
 image.src = data1.message;
@@ -94,7 +96,7 @@ divContent3.appendChild(divImage3);
 wikiItem3.appendChild(h3);
 wikiItem3.appendChild(divContent3);
 
-wikiContainer2.appendChild(wikiItem3);
+wikiContainer3.appendChild(wikiItem3);
 // ------------------------------------------
 const response4 = await fetch('https://dog.ceo/api/breed/chihuahua/images/random');
 const data4 = await response4.json();
