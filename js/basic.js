@@ -37,8 +37,8 @@ image.className = "wiki-img";
 image.src = data1.message;
 
 divImage.appendChild(image);
-divContent.appendChild(paragraph);
 divContent.appendChild(divImage);
+divContent.appendChild(paragraph);
 wikiItem.appendChild(h);
 wikiItem.appendChild(divContent);
 
@@ -64,8 +64,8 @@ image2.className = "wiki-img";
 image2.src = data2.message;
 
 divImage2.appendChild(image2);
-divContent2.appendChild(paragraph2);
 divContent2.appendChild(divImage2);
+divContent2.appendChild(paragraph2);
 wikiItem2.appendChild(h2);
 wikiItem2.appendChild(divContent2);
 
@@ -91,8 +91,8 @@ image3.className = "wiki-img";
 image3.src = data3.message;
 
 divImage3.appendChild(image3);
-divContent3.appendChild(paragraph3);
 divContent3.appendChild(divImage3);
+divContent3.appendChild(paragraph3);
 wikiItem3.appendChild(h3);
 wikiItem3.appendChild(divContent3);
 
@@ -118,8 +118,8 @@ image4.className = "wiki-img";
 image4.src = data4.message;
 
 divImage4.appendChild(image4);
-divContent4.appendChild(paragraph4);
 divContent4.appendChild(divImage4);
+divContent4.appendChild(paragraph4);
 wikiItem4.appendChild(h4);
 wikiItem4.appendChild(divContent4);
 
@@ -145,8 +145,8 @@ image5.className = "wiki-img";
 image5.src = data5.message;
 
 divImage5.appendChild(image5);
-divContent5.appendChild(paragraph5);
 divContent5.appendChild(divImage5);
+divContent5.appendChild(paragraph5);
 wikiItem5.appendChild(h5);
 wikiItem5.appendChild(divContent5);
 
